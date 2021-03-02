@@ -88,7 +88,10 @@ As you can see, I was able to write the VBA script and resolve the assignment ch
 
 Excel VBA: Color Index Codes List & RGB Colors. Retrieved from Automatedexcel.com
 https://www.automateexcel.com/excel-formatting/color-reference-for-color-index/
+
 Macro to Loop Through All Worksheets in a Workbook. Retrieved from Support.microsoft.com
 https://support.microsoft.com/en-us/topic/macro-to-loop-through-all-worksheets-in-a-workbook-feef14e3-97cf-00e2-538b-5da40186e2b0
+
+
 Help with avoiding division by zero error in VBA. Retrieved from MrExcel.com
 https://www.mrexcel.com/board/threads/help-with-avoiding-division-by-zero-error-in-vba.783862/
