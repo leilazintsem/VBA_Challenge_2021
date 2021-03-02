@@ -35,9 +35,11 @@ the alphabetical testing dataset, which I used to test out my code and the Multi
 * Stock Ticker symbol
 * Date
 * Open price
-* The stock high and low for that day
+* The stock high and low
 * closing price
 * Volume  of the stock
+
+---
 
 ##### Project challenges
 
@@ -50,12 +52,16 @@ the alphabetical testing dataset, which I used to test out my code and the Multi
 * The total stock volume of the stock
 
 2. Conditional format changes using VBA script to highlight positive change in green and negative change in red.
-
 3. Create a summary table that will show the return of the stock "Greatest % increase", "Greatest % decrease" and "Greatest total volume".
-
 4. Adjust VBA scrip so that it can be run on every worksheet just by running the VBA Code once.
 
+   ---
+
 ##### Project outcomes
+
+---
+
+
 
 ###### VBA script Explanation
 
@@ -68,14 +74,16 @@ Inside the i for loop, I have set two conditions:
 
 •	The second IF condition was added so that the program ignores all the bad data containing 0 value in them. This step is important because if this condition is not set, we will get an overflow error message. The program will try to divide yearly change by open price values containing the 0 and that will be an overflow error.
 
-
 At this point on the for loop, we are on the last row of the first ticker and we want the program to grab a new open price when it goes on to next ticker, therefore we set a new open price, which is the open price of the next ticker. Moving forward, I wrote a script to add the total volumes for each ticker as well as the script to print ticker symbol, total volume, yearly change, and percent change. The for-loop end with an else condition where Volumes are added if the first “IF statement” is false.
 The second part of the Script focus on the second table where the max/min Percent change and Max volume are displayed
 For this part I declared my variables, then I used a for loop to loop through the tickers in the first table. Inside the loop I set the Conditions with the IF and else IF statements, so the max/min value are grabbed, format, and printed on the second table.
 My code ends with a “next i” to move onto the next row, and “next ws” to move on to the next worksheet.
+
+
 As you can see, I was able to write the VBA script and resolve the assignment challenges.
 
-### References:
+
+###### References:
 
 Excel VBA: Color Index Codes List & RGB Colors. Retrieved from Automatedexcel.com
 https://www.automateexcel.com/excel-formatting/color-reference-for-color-index/
