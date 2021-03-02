@@ -1,35 +1,72 @@
-# VBA_Challenge_2021
- VBA Homework - The VBA of Wall Street
+VBA_Challenge_2021
 
-## Background
+VBA Homework – Stock Market
 
-You are well on your way to becoming a programmer and Excel master! In this homework assignment you will use VBA scripting to analyze real stock market data. Depending on your comfort level with VBA, you may choose to challenge yourself with a few of the challenge tasks.
+Objectif
 
-## Instructions
+This Repository has been created for the submission of the VBA homework assignment for my Data Science Bootcamp at Northwestern University.
 
-* Create a script that will loop through all the stocks for one year and output the following information.
+VBA Scripting
 
-  * The ticker symbol.
+Student: Leila Zintsem a Moute
 
-  * Yearly change from opening price at the beginning of a given year to the closing price at the end of that year.
+March 2021
 
-  * The percent change from opening price at the beginning of a given year to the closing price at the end of that year.
+About the project:
 
-  * The total stock volume of the stock.
+The following repository displays my solution to the Homework assignment VBA_Challenge. This repository is structured in different folders:
 
-* You should also have conditional formatting that will highlight positive change in green and negative change in red.
+•	The first folder “Images” contains the screenshots of the project solutions.
+The pictures Titled “2014”, “2015”, “2016” are the screenshots solution of the Multiyear stock dataset. The other ones (A, B, C, D, E, F, P) are screenshots for the testing dataset “Alphabetical testing” 
+•	The second folder VBA_script has my VBA script which I used for both the Alphabetical testing dataset and the Multi year stock dataset. 
+•	The Third folder “sources” contains the two datasets used for this project.
 
-* The result should look as follows.
+Through this assignment, I hope you will be able to see the technical skills I have gained throughout this section of the Data Science and Visualization bootcamp.  
 
-### CHALLENGES
+The Project Description
 
-1. Your solution will also be able to return the stock with the "Greatest % increase", "Greatest % decrease" and "Greatest total volume". The solution will look as follows:
+For this Project, I was asked to use VBA scripting to analyze real stock market data. I was given Two datasets:
+ the alphabetical testing dataset, which I used to test out my code and the Multiyear stock dataset where I applied the code tested on the alphabetical testing dataset. 
 
-2. Make the appropriate adjustments to your VBA script that will allow it to run on every worksheet, i.e., every year, just by running the VBA script once.
 
-### Other Considerations
 
-* Use the sheet `alphabetical_testing.xlsx` while developing your code. This data set is smaller and will allow you to test faster. Your code should run on this file in less than 3-5 minutes.
+Project challenges
+1)	Create a script that will loop through all the stocks for one year and output the following information
+•	The ticker symbol.
+•	Yearly change from opening price at the beginning of a given year to the is closing price at the end of that year.
+•	The percent change from opening price at the beginning of a given 
+year to the closing price at the end of that year.
+•	The total stock volume of the stock
 
-* Make sure that the script acts the same on each sheet. The joy of VBA is to take the tediousness out of repetitive task and run over and over again with a click of the button.
+2)	Conditional format changes using VBA script to highlight positive change in green and negative change in red.
+
+3)	Create a summary table that will show the return of the stock "Greatest % increase", "Greatest % decrease" and "Greatest total volume". 
+
+
+4)	Adjust VBA scrip so that it can be run on every worksheet just by running the VBA Code once.
+
+Project outcomes
+
+VBA script Explanation
+The first step in my VBA script was to loop throughout all the worksheets. Then for all the worksheets, I scripted a code to Insert the summary tables where my output will be displayed. 
+Secondly, I declared all my variables. You will see that Open price was assigned value before the For loop. This was done so that the value within cells (2,3) get grabbed before the loop starts, otherwise the loop would have grabbed the wrong Open price. Moving forward, I looped throughout all the tickers. The loop starts on row two (i=2), that is because the first ticker is listed on row two. 
+Inside the i for loop, I have set two conditions:
+•	The first condition is set so that the program knows when to pause the loop to apply the conditions; Inside this  condition, I nestled another IF condition to conditional format the yearly change. 
+
+•	The second IF condition was added so that the program ignores all the bad data containing 0 value in them. This step is important because if this condition is not set, we will get an overflow error message. The program will try to divide yearly change by open price values containing the 0 and that will be an overflow error. 
+At this point on the for loop, we are on the last row of the first ticker and we want the program to grab a new open price when it goes on to next ticker, therefore we set a new open price, which is the open price of the next ticker. Moving forward, I wrote a script to add the total volumes for each ticker as well as the script to print ticker symbol, total volume, yearly change, and percent change. The for-loop end with an else condition where Volumes are added if the first “IF statement” is false. 
+The second part of the Script focus on the second table where the max/min Percent change and Max volume are displayed
+For this part I declared my variables, then I used a for loop to loop through the tickers in the first table. Inside the loop I set the Conditions with the IF and else IF statements, so the max/min value are grabbed, format, and printed on the second table. 
+My code ends with a “next i” to move onto the next row, and “next ws” to move on to the next worksheet. 
+As you can see, I was able to write the VBA script and resolve the assignment challenges. 
+
+
+References:
+Excel VBA: Color Index Codes List & RGB Colors. Retrieved from Automatedexcel.com
+https://www.automateexcel.com/excel-formatting/color-reference-for-color-index/
+Macro to Loop Through All Worksheets in a Workbook. Retrieved from Support.microsoft.com
+https://support.microsoft.com/en-us/topic/macro-to-loop-through-all-worksheets-in-a-workbook-feef14e3-97cf-00e2-538b-5da40186e2b0
+Help with avoiding division by zero error in VBA. Retrieved from MrExcel.com
+https://www.mrexcel.com/board/threads/help-with-avoiding-division-by-zero-error-in-vba.783862/
+
 
