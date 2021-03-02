@@ -82,8 +82,9 @@ My code ends with a “next i” to move onto the next row, and “next ws” to
 
 As you can see, I was able to write the VBA script and resolve the assignment challenges.
 
+---
 
-###### References:
+###### References
 
 Excel VBA: Color Index Codes List & RGB Colors. Retrieved from Automatedexcel.com
 https://www.automateexcel.com/excel-formatting/color-reference-for-color-index/
